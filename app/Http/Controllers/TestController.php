@@ -16,7 +16,7 @@ class TestController extends Controller
         
         // simpen to db
         
-        //iki nyoba
+        //iki nyoba ---------------------git---------------------
         
         return response()->json([
             'status' => 'oke',
