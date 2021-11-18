@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\TestController;
 use Illuminate\Support\Facades\Route;
 
@@ -14,8 +16,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [FrontendController::class,'index']);
+
 
 Route::post('/next-antrian', [TestController::class, 'next']);
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/dashboard/monitor', [AdminController::class, 'index']);
+Route::get('/dashboard', function(){
+  return redirect('/dashboard/teller');
+});
+Route::get('/dashboard/teller', [AdminController::class, 'indexTeller']);
+Route::get('/dashboard/teller/create', [AdminController::class, 'create']);
