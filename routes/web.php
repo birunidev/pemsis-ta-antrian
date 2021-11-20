@@ -18,11 +18,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [FrontendController::class,'index']);
 
-
 Route::post('/next-antrian', [TestController::class, 'next']);
+Route::post('/tambah-antrian', [TestController::class, 'tambah']);
 Auth::routes();
 
-<<<<<<< HEAD
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/dashboard/monitor', [AdminController::class, 'index']);
@@ -31,6 +30,4 @@ Route::get('/dashboard', function(){
 });
 Route::get('/dashboard/teller', [AdminController::class, 'indexTeller']);
 Route::get('/dashboard/teller/create', [AdminController::class, 'create']);
-=======
-Route::post('/next-antrian', [TestController::class, 'next']);
->>>>>>> b4870ad4176c91217428c3e13d32b8f2f29cc9da
+
