@@ -21,6 +21,9 @@
   </div>
   <div class="container">
     <div class="row ">
+    @@foreach ($collection as $item)
+
+    @endforeach
       <div class="col-md-6 text-center mt-3">
         <p class="h1 font-weight-bold">Teller 1</p>
         <div class="teller-box ">
