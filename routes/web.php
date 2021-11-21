@@ -30,4 +30,5 @@ Route::get('/dashboard', function(){
 });
 Route::get('/dashboard/teller', [AdminController::class, 'indexTeller']);
 Route::get('/dashboard/teller/create', [AdminController::class, 'create']);
+Route::post('/dashboard/teller/create/store', [AdminController::class, 'store']);
 
