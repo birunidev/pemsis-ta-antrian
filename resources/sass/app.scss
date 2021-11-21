@@ -1,0 +1,21 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+body {
+    background-color: #eaf7ff;
+}
+
+.teller-box {
+    font-weight: bold;
+    font-size: 4em;
+    background-color: #b1dff9;
+    padding: 70px 0px;
+    max-width: 431px;
+    margin: auto;
+}
