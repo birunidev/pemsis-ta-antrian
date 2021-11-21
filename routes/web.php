@@ -31,6 +31,10 @@ Route::get('/dashboard', function(){
 Route::get('/dashboard/teller', [AdminController::class, 'indexTeller']);
 Route::get('/dashboard/teller/create', [AdminController::class, 'create']);
 Route::post('/dashboard/teller/create/store', [AdminController::class, 'store']);
+<<<<<<< HEAD
 Route::get('/dashboard/teller/edit/{id_teller}', [AdminController::class, 'edit']);
 Route::put('/dashboard/teller/update', [AdminController::class, 'update']);
 Route::get('/dashboard/teller/delete/{id}', [AdminController::class, 'delete']);
+=======
+
+>>>>>>> 6b6cf095fc8d4efa2d60d135d88d9b42aa4d9437

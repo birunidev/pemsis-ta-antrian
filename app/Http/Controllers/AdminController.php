@@ -4,7 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Antrian as a;
+<<<<<<< HEAD
 use Illuminate\Support\Facades\DB;
+=======
+
+>>>>>>> 6b6cf095fc8d4efa2d60d135d88d9b42aa4d9437
 class AdminController extends Controller
 {
     public function __construct()
@@ -48,6 +52,7 @@ class AdminController extends Controller
 
         return redirect('/dashboard');
     }
+<<<<<<< HEAD
 
     public function edit($id)
     {
@@ -77,3 +82,6 @@ class AdminController extends Controller
         return redirect('/dashboard');
     }
 }
+=======
+}
+>>>>>>> 6b6cf095fc8d4efa2d60d135d88d9b42aa4d9437
