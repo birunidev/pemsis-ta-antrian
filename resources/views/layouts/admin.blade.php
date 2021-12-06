@@ -67,6 +67,13 @@
                     </div>
                 </div>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="document.getElementById('logout-form').submit()">
+                    <span>Logout</span></a>
+                <form id="logout-form" method="POST" action="{{route('logout')}}">
+                    @csrf
+                </form>
+            </li>
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
