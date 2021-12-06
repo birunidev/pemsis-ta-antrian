@@ -21,6 +21,7 @@
                                         <th>Action</th>
                                     </tr>
                                 </thead>
+<<<<<<< HEAD
 
                                 <tbody>
                                     @foreach ($dataantrian as $key)
@@ -32,6 +33,26 @@
                                                 <a href="/dashboard/teller/edit/{{$key->id_antrian}}" class="btn btn-success">Edit</a>
                                                 <a href="/dashboard/teller/delete/{{$key->id_antrian}}" class="btn btn-danger">
                                                     <i class="fas fa-trash"></i></a>
+=======
+
+                                <tbody>
+                                    @foreach ($dataantrian as $key)
+                                        <tr>
+                                            <td>{{$key->id_antrian}}</td>
+                                            <td>{{$key->nomer_teller}}</td>
+                                            <td>{{$key->total_antrian}}</td>
+                                            <td>
+<<<<<<< HEAD
+                                                <a href="/dashboard/teller/edit/{{$key->id_antrian}}" class="btn btn-success">Edit</a>
+                                                <a href="/dashboard/teller/delete/{{$key->id_antrian}}" class="btn btn-danger">
+                                                    <i class="fas fa-trash"></i></a>
+=======
+                                                <a href="/dashboard/teller/1/edit" class="btn btn-success">Edit</a>
+                                                <a href="/dashboard/teller/1/delete" class="btn btn-danger">
+                                                    <i class="fas fa-trash"></i></a>
+
+>>>>>>> 6b6cf095fc8d4efa2d60d135d88d9b42aa4d9437
+>>>>>>> 0158c46c2e5ef4880f9de32994fa96227207897e
                                             </td>
                                     @endforeach
                                     </tr>

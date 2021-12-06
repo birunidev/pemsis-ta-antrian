@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Antrian as a;
 use App\Models\Antrian_aktif as af;
-
 use Illuminate\Support\Facades\DB;
 
 class AdminController extends Controller
@@ -55,10 +54,10 @@ class AdminController extends Controller
             'status_antrian' => 'Melayani'
         ]);
 
-        
-
         return redirect('/dashboard');
     }
+
+
 
     public function edit($id)
     {
